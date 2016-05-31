@@ -1,0 +1,22 @@
+.fast_section_filter dd>div span {
+    color: #3d464d;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.25rem 0.4rem;
+    line-height: normal;
+    border: 1px solid transparent;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+}
+
+.fast_section_filter dd.selected span {
+    border-color: #c0d8ff;
+    font-weight: 600;
+}
+
+.fast_section_filter dl {
+    position: relative;
+    color: #3d464d;
+    margin: 0 1rem 0 0;
+}
