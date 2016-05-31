@@ -7,14 +7,15 @@
     <script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-ui"></script>
     <link href="http://www.francescomalagrino.com/BootstrapPageGenerator/3/css/bootstrap-combined.min.css" rel="stylesheet"
     media="screen" />
+    <link href="static/css/main_content.css" rel='stylesheet' type='text/css' />
     <script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/bootstrap.min.js"></script>
-    <title></title>
+    <title>我是一只会爬的虫！</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span12">
-          <ul class="nav nav-tabs nav-justified" >
+          <ul class="nav nav-tabs nav-justified">
             <li class="active">
               <a href="#" rel="nofollow">36氪</a>
             </li>
@@ -38,6 +39,46 @@
           </ul>
         </div>
       </div>
+    </div>
+    <div class="filter">
+      <ul>
+        <li class="hint">
+          <span>筛选情报：</span>
+        </li>
+        <li>
+          <span>
+            <a href="#">大数据</a>
+          </span>
+        </li>
+        <li>
+          <span>
+            <a href="#">云计算</a>
+          </span>
+        </li>
+        <li>
+          <span>
+            <a href="#">智能硬件</a>
+          </span>
+        </li>
+        <li>
+          <span>
+            <a href="#">其他</a>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="fast_section_list">
+      <ul>
+		{% for msg in msg_list %}
+        <li style="list-style: none">
+          <h2 class="title">{{ msg.hash_title }}</h2>
+          <div class="share_groups">{{ msg.create_time }}</div>
+          <br/>
+          <p>{{ msg.description_text }}</p>
+		  <a href="#">原文链接</a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </body>
 </html>

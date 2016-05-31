@@ -25,18 +25,31 @@
     margin-top: 0.75rem;
     word-break: break-all;
 }
-
+.hint {
+	color: #999;
+}
 .filter li{
 	display:inline;
 }
 
-.filter ul{
+
+.filter a:link,.filter a:visited
+{
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#98bf21;
+	text-align:center;
+	padding:6px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+
+.filter ul
+{
 	list-style-type:none;
 	margin:0;
 	padding:0;
-}
-
-.filter a{
-	display:block;
-	width:60px;
+	padding-top:6px;
+	padding-bottom:6px;
 }
