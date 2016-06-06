@@ -67,6 +67,19 @@ class AuthUserUserPermissions(models.Model):
         managed = False
         db_table = 'auth_user_user_permissions'
 
+class Cyb(models.Model):
+    id = models.IntegerField(primary_key=True)
+    hash_title = models.CharField(max_length=64, blank=True)
+    description_text = models.TextField(blank=True)
+    news_url = models.TextField(blank=True)
+    created_at = models.DateTimeField(blank=True, null=True)
+    is_top = models.IntegerField(blank=True, null=True)
+    column_id = models.IntegerField(blank=True, null=True)
+    news_url_type = models.TextField(blank=True)
+    class Meta:
+        managed = False
+        db_table = 'cyb'
+
 class DjangoAdminLog(models.Model):
     id = models.IntegerField(primary_key=True)
     action_time = models.DateTimeField()

@@ -5,9 +5,10 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-     url(r'^$', 'spider_list.views.index', name='home'),
+    url(r'^$', 'spider_list.views.index', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'^item', 'spider_list.views.get_item', name='get_item'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^desc', 'spider_list.views.desc'),
 )
