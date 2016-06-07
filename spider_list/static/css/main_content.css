@@ -33,6 +33,7 @@
 }
 .filter li{
 	display:inline;
+	margin:0.05em;
 }
 
 .filter .selected{
@@ -40,7 +41,6 @@
     font-weight:bold;
 	color:#FFFFFF;
 	text-align:center;
-	padding:6px;
 	text-decoration:none;
 	text-transform:uppercase;
 
@@ -51,7 +51,8 @@
 	color:#FFFFFF;
 	background-color:#98bf21;
 	text-align:center;
-	padding:6px;
+	padding:0.05em;
+	margin:0.8em;
 	text-decoration:none;
 	text-transform:uppercase;
 }
@@ -68,28 +69,30 @@
 
 body .head {
     text-align:center;
-    margin:5px;
-    padding:0px;
+    margin:0.3em;
+    padding:2px;
     /*background-color:#E7EAEB;*/
     font-family:"微软雅黑";
-    font-size:36px;
-    height:40px;
+    /*font-size:36px;*/
+    font-size:1.6em;
+    /*height:40px;*/
     /*display:inline;*/
 }
 body .head .pa, body .head .chong{
 	color:#DC143C;
+/*    font-size:2.0em;
     font-size:48px;
+    */
     display:inline;
 }
+
 body {
     margin:15px;
     position:relative;
 }
 
-body .image_insect{
-    /*#background:../../images/insect.jpg;
-    #background:url("http://121.42.30.109:8000/static/images/insect.jpg");*/
+/*body .image_insect{
     display:inline;
     height:48px;
     width:48px;
-}
+}*/
